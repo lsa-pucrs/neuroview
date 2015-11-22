@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ACERTA - SCHOOLS results</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <span><img class="brand" src="img/logo-inscer.png" alt=""></span>
+              InsCer - PUCRS
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Relevant cc200 parcels for classification</h1>
+      <div class="row">
+        <div class="col-md-4" id="brain">Loading cc200...</div>
+        <div class="col-md-6">
+          <div id="brain_info">Loading data...</div>
+          <div id="labels" class="panel panel-default">
+            <div class="panel-body">
+              <div class="list-group">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" id="regions">
+          <h4>Relevant parcels</h4>
+          <div class="list-group">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="../../NeuroView.js"></script>
+    <script src="js/svm_coeffs.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+body { padding:50px 0; background:rgb(81, 84, 172); color:#FFF; font-weight:bold; }
+
+circle.textcircle { fill:#FFF; }
+circle.chordcircle { fill:#DDD; }
+
+#brain { padding:10px; margin:10px 0; text-align:center }
+#brain * {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  -o-user-select:none;
+  user-select:none;
+}
+#brain canvas { cursor:pointer; }
+
+#chord { padding:10px; margin:10px 0; }
+#chord, #chord * {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  -o-user-select:none;
+  user-select:none;
+  text-align:center;
+}
+#chord .region { cursor:pointer; }
+#chord .chord { cursor:pointer; fill:none !important; }
+
+#threshold { background:#DDD; }
+#threshold .d3-slider-handle { background:#FFF; }
+#threshold text { fill:#FFF; cursor:pointer; }
+
+.container { margin-top:50px; }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #FFF;
+  shape-rendering: crispEdges;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+#distribution .title { fill: #FFFFFF; }
+#distribution .tick text { fill: #FFFFFF; } 
+
+#distribution .label.asd { fill: darkgreen; font-size: 14px; }
+#distribution .label.tc { fill: darkviolet; font-size: 14px; }
+
+.hist.asd rect { fill: lime; }
+.hist.tc rect { fill: violet; }
+
+.normal .mean {
+  stroke-width: 2;
+  fill: none;
+  opacity: 0.5;
+}
+.normal.asd .mean {
+  stroke: darkgreen;
+}
+
+.normal.tc .mean {
+  stroke: darkviolet;
+}
+
+.normal path {
+  /*stroke-dasharray: 10,10;*/
+  stroke-width: 3;
+  fill: none;
+}
+.normal.asd path {
+  stroke: darkgreen;
+}
+
+.normal.tc path {
+  stroke: darkviolet;
+}
